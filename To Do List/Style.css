@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+main {
+  width: 100%;
+  min-height: 110vh;
+  background-color: #3498db;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  background-image: url(image/Texture\ Background.png);
+  /* opacity: 0.4 how to delete a source control repository in vs code; */
+}
+
+.box {
+  width: 700px;
+  min-height: 500px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 1px 5px 15px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 40px;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  gap: 0.3rem;
+}
+
+.heading img {
+  width: 3.5rem;
+}
+
+.heading h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  /* text-decoration: underline; */
+  border-bottom: 2px solid #000;
+  /* padding-bottom: 15px; */
+}
+
+#item {
+  width: 100%;
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 2px grey;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+}
+
+.to-do-list {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.to-do-list li {
+  font-weight: 500;
+  background-color: #2c2e50;
+  color: #fff;
+  padding: 15px;
+  font-size: 16px;
+  position: relative;
+  text-align: justify;
+  padding-right: 30px;
+  margin-top: 15px;
+}
+
+.to-do-list li i {
+  vertical-align: middle;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  cursor: pointer;
+}
+
+.done {
+  text-decoration: line-through;
+  color: black;
+  background-color: #95a5a6 !important;
+  /* border: 2px solid red; */
+}
+
+@media (max-width: 425px) {
+  #item::placeholder {
+    font-size: 16px; /* Change the font-size here */
+  }
+
+  .heading {
+    margin-bottom: 20px;
+  }
+
+  .heading img {
+    display: none;
+  }
+}
